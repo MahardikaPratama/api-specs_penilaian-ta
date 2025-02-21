@@ -1,100 +1,118 @@
 {
-    "status_message": "success",
+    "status_message": "Success",
     "status_code": 200,
     "data": {
         "id_form_penilaian": 1,
         "kategori": [
             {
                 "id_kategori": 1,
-                "nama_kategori": "seminar 1",
+                "nama_kategori": "Seminar 1",
                 "bobot_kategori": 20,
                 "rubrik": [
                     {
                         "id_rubrik": 1,
-                        "judul_rubrik": "Dokumen",
-                        "bobot_rubrik": 30,
-                        "detail_rubrik": "Penilaian terhadap seminar 1"
-                    },
+                        "judul_rubrik": "Kejelasan isi dokumen",
+                        "bobot_rubrik": 40,
+                        "detail_rubrik": "<ul><li>Kejelasan kaitan antar bab/sub kajian (hubungan sebab akibat/reasoning, rasionalitas)</li><li>Kesesuaian dan ketepatan penggunaan metodologi dan modelling tools</li><li>Kejelasan dan kesesuaian studi pustaka beserta daftar pustakanya</li><li>Tata tulis laporan</li></ul>"
+                    },                      
                     {
                         "id_rubrik": 2,
                         "judul_rubrik": "Presentasi",
-                        "bobot_rubrik": 35,
-                        "detail_rubrik": "Penilaian terhadap seminar 1"
-                    },
+                        "bobot_rubrik": 20,
+                        "detail_rubrik": "<ul><li>Materi presentasi</li><li>Kejelasan presentasi & kemampuan membangkitkan minat pemirsa</li><li>Penggunaan alat bantu</li><li>Ketepatan waktu</li><li>Kebebasan dari catatan</li></ul>"
+                    },                      
                     {
                         "id_rubrik": 3,
-                        "judul_rubrik": "Diskusi",
-                        "bobot_rubrik": 35,
-                        "detail_rubrik": "Penilaian terhadap seminar 1"
+                        "judul_rubrik": "Tanya Jawab (penguasaan materi terkait tugas yang dikerjakan)",
+                        "bobot_rubrik": 40,
+                        "detail_rubrik": ""
                     }
                 ]
             },
             {
                 "id_kategori": 2,
-                "nama_kategori": "seminar 2",
+                "nama_kategori": "Seminar 2",
                 "bobot_kategori": 20,
                 "rubrik": [
                     {
                         "id_rubrik": 1,
-                        "judul_rubrik": "Dokumen",
-                        "bobot_rubrik": 20,
-                        "detail_rubrik": "Penilaian terhadap seminar 2"
-                    },
+                        "judul_rubrik": "Kejelasan isi dokumen",
+                        "bobot_rubrik": 40,
+                        "detail_rubrik": "<ul><li>Kejelasan kaitan antar bab/sub kajian (hubungan sebab akibat/reasoning, rasionalitas)</li><li>Kesesuaian dan ketepatan penggunaan metodologi dan modelling tools</li><li>Kejelasan dan kesesuaian studi pustaka beserta daftar pustakanya</li><li>Tata tulis laporan</li></ul>"
+                    },                      
                     {
                         "id_rubrik": 2,
                         "judul_rubrik": "Presentasi",
-                        "bobot_rubrik": 40,
-                        "detail_rubrik": "Penilaian terhadap seminar 2"
-                    },
+                        "bobot_rubrik": 20,
+                        "detail_rubrik": "<ul><li>Materi presentasi</li><li>Kejelasan presentasi & kemampuan membangkitkan minat pemirsa</li><li>Penggunaan alat bantu</li><li>Ketepatan waktu</li><li>Kebebasan dari catatan</li></ul>"
+                    },                      
                     {
                         "id_rubrik": 3,
-                        "judul_rubrik": "Diskusi",
+                        "judul_rubrik": "Tanya Jawab (penguasaan materi terkait tugas yang dikerjakan)",
                         "bobot_rubrik": 40,
-                        "detail_rubrik": "Penilaian terhadap seminar 2"
+                        "detail_rubrik": ""
                     }
                 ]
             },
             {
                 "id_kategori": 3,
-                "nama_kategori": "seminar 3",
-                "bobot_kategori": 30,
+                "nama_kategori": "Seminar 3",
+                "bobot_kategori": 20,
                 "rubrik": [
                     {
                         "id_rubrik": 1,
-                        "judul_rubrik": "Dokumen",
-                        "bobot_rubrik": 40,
-                        "detail_rubrik": "Penilaian terhadap seminar 3"
-                    },
+                        "judul_rubrik": "Kejelasan isi dokumen",
+                        "bobot_rubrik": 35,
+                        "detail_rubrik": "<ul><li>Kejelasan kaitan antar bab/sub kajian (hubungan sebab akibat/reasoning, rasionalitas)</li><li>Kesesuaian dan ketepatan penggunaan metodologi dan modelling tools</li><li>Kejelasan dan kesesuaian studi pustaka beserta daftar pustakanya</li><li>Tata tulis laporan</li></ul>"
+                    },                      
                     {
                         "id_rubrik": 2,
                         "judul_rubrik": "Presentasi",
-                        "bobot_rubrik": 60,
-                        "detail_rubrik": "Penilaian terhadap seminar 3"
+                        "bobot_rubrik": 15,
+                        "detail_rubrik": "<ul><li>Materi presentasi</li><li>Kejelasan presentasi & kemampuan membangkitkan minat pemirsa</li><li>Penggunaan alat bantu</li><li>Ketepatan waktu</li><li>Kebebasan dari catatan</li></ul>"
+                    },                      
+                    {
+                        "id_rubrik": 3,
+                        "judul_rubrik": "Tanya Jawab (penguasaan materi terkait tugas yang dikerjakan)",
+                        "bobot_rubrik": 35,
+                        "detail_rubrik": ""
+                    },
+                    {
+                        "id_rubrik": 4,
+                        "judul_rubrik": "Prototipe yang dihasilkan",
+                        "bobot_rubrik": 15,
+                        "detail_rubrik": ""
                     }
                 ]
             },
             {
                 "id_kategori": 4,
                 "nama_kategori": "Sidang Akhir",
-                "bobot_kategori": 30,
+                "bobot_kategori": 40,
                 "rubrik": [
                     {
                         "id_rubrik": 1,
-                        "judul_rubrik": "Dokumen",
-                        "bobot_rubrik": 20,
-                        "detail_rubrik": "Penilaian terhadap sidang akhir"
-                    },
+                        "judul_rubrik": "Kejelasan isi dokumen",
+                        "bobot_rubrik": 35,
+                        "detail_rubrik": "<ul><li>Kejelasan kaitan antar bab/sub kajian (hubungan sebab akibat/reasoning, rasionalitas)</li><li>Kesesuaian dan ketepatan penggunaan metodologi dan modelling tools</li><li>Kejelasan dan kesesuaian studi pustaka beserta daftar pustakanya</li><li>Tata tulis laporan</li></ul>"
+                    },                      
                     {
                         "id_rubrik": 2,
                         "judul_rubrik": "Presentasi",
-                        "bobot_rubrik": 40,
-                        "detail_rubrik": "Penilaian terhadap sidang akhir"
-                    },
+                        "bobot_rubrik": 10,
+                        "detail_rubrik": "<ul><li>Materi presentasi</li><li>Kejelasan presentasi & kemampuan membangkitkan minat pemirsa</li><li>Penggunaan alat bantu</li><li>Ketepatan waktu</li><li>Kebebasan dari catatan</li></ul>"
+                    },                      
                     {
                         "id_rubrik": 3,
-                        "judul_rubrik": "Diskusi",
-                        "bobot_rubrik": 40,
-                        "detail_rubrik": "Penilaian terhadap sidang akhir"
+                        "judul_rubrik": "Tanya Jawab (penguasaan materi terkait tugas yang dikerjakan)",
+                        "bobot_rubrik": 30,
+                        "detail_rubrik": ""
+                    },
+                    {
+                        "id_rubrik": 4,
+                        "judul_rubrik": "Prototipe yang dihasilkan",
+                        "bobot_rubrik": 25,
+                        "detail_rubrik": ""
                     }
                 ]
             }

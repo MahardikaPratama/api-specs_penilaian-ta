@@ -1,0 +1,45 @@
+// Corrected DBML schema with composite primary keys
+
+Enum status_form{
+  PENDING
+  DRAFT
+  PUBLISHED
+  USED
+  FINISHED
+}
+
+Enum role_dosen{
+  KOORDINATOR_TA
+  DOSEN
+}
+
+Table FormPenilaian{
+  id_form_penilaian int [pk]
+  nama_formulir_penilaian varchar(50)
+  nip varchar(20) [ref: > Dosen.nip]
+  tahun_ajaran int
+  status status_form
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table KategoriPenilaian {
+  id_kategori int [pk]
+  id_form_penilaian int [ref: - FormPenilaian.id_form_penilaian]
+  nama_kategori varchar(20)
+  bobot_kategori int
+}
+
+Table RubrikPenilaian {
+  id_rubrik int [pk]
+  id_kategori int [ref: > KategoriPenilaian.id_kategori]
+  judul_rubrik varchar (100)
+  detail_rubrik text
+  bobot_rubrik int
+}
+
+Table Dosen {
+  nip varchar(20)
+  nama_dosen varchar(30)
+  role role_dosen
+}

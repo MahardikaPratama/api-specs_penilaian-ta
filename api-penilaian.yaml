@@ -1,0 +1,123 @@
+openapi: 3.0.0
+info:
+  title: API Pengelola Penilaian TA
+  description: API untuk kasus penilaian TA
+  version: 1.0.0
+paths:
+  /api/form-penilaian:
+    get:
+      summary: Mengambil daftar form penilaian
+      operationId: getFormPenilaian
+      responses:
+        '200':
+          description: Daftar form penilaian berhasil diambil
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status_message:
+                    type: string
+                    example: "Success"
+                  status_code:
+                    type: integer
+                    example: 200
+                  data:
+                    type: object
+                    properties:
+                      id_form_penilaian:
+                        type: integer
+                        example: 1
+                      nama_dosen:
+                        type: string
+                        example: "Dr. Ir. H. M. Fauzi, M.Sc."
+                      nama_formulir_penilaian:
+                        type: string
+                        example: "Formulir Penilaian Tugas Akhir v1"
+                      tahun_ajaran:
+                        type: string
+                        example: "2019"
+                      status:
+                        type: string
+                        example: "PENDING"
+                      created_at:
+                        type: string
+                        format: date-time
+                        example: "2019-12-12 00:00"
+  /api/form-penilaian/{id}:
+    get:
+      summary: Mengambil satu daftar detail form penilaian
+      operationId: getDetailFormPenilaian
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Detail form penilaian berhasil diambil
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status_message:
+                    type: string
+                    example: "success"
+                  status_code:
+                    type: integer
+                    example: 200
+                  data:
+                    type: object
+                    properties:
+                      id_form_penilaian:
+                        type: integer
+                        example: 1
+                      kategori:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id_kategori:
+                              type: integer
+                              example: 1
+                            nama_kategori:
+                              type: string
+                              example: "seminar 1"
+                            bobot_kategori:
+                              type: integer
+                              example: 20
+                            rubrik:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  id_rubrik:
+                                    type: integer
+                                    example: 1
+                                  judul_rubrik:
+                                    type: string
+                                    example: "Dokumen"
+                                  bobot_rubrik:
+                                    type: integer
+                                    example: 30
+                                  detail_rubrik:
+                                    type: string
+                                    example: "Penilaian terhadap seminar 1"
+                              example:
+                                - id_rubrik: 1
+                                  judul_rubrik: "Dokumen"
+                                  bobot_rubrik: 30
+                                  detail_rubrik: "Penilaian terhadap seminar 1"
+                                - id_rubrik: 2
+                                  judul_rubrik: "Presentasi"
+                                  bobot_rubrik: 40
+                                  detail_rubrik: "Penilaian terhadap cara penyampaian materi"
+                                - id_rubrik: 3
+                                  judul_rubrik: "Materi"
+                                  bobot_rubrik: 30
+                                  detail_rubrik: "Penilaian terhadap kualitas isi presentasi"
+
+                                  
+                            

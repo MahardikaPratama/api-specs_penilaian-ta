@@ -1,0 +1,103 @@
+{
+    "status_message": "success",
+    "status_code": 200,
+    "data": {
+        "id_form_penilaian": 1,
+        "kategori": [
+            {
+                "id_kategori": 1,
+                "nama_kategori": "seminar 1",
+                "bobot_kategori": 20,
+                "rubrik": [
+                    {
+                        "id_rubrik": 1,
+                        "judul_rubrik": "Dokumen",
+                        "bobot_rubrik": 30,
+                        "detail_rubrik": "Penilaian terhadap seminar 1"
+                    },
+                    {
+                        "id_rubrik": 2,
+                        "judul_rubrik": "Presentasi",
+                        "bobot_rubrik": 35,
+                        "detail_rubrik": "Penilaian terhadap seminar 1"
+                    },
+                    {
+                        "id_rubrik": 3,
+                        "judul_rubrik": "Diskusi",
+                        "bobot_rubrik": 35,
+                        "detail_rubrik": "Penilaian terhadap seminar 1"
+                    }
+                ]
+            },
+            {
+                "id_kategori": 2,
+                "nama_kategori": "seminar 2",
+                "bobot_kategori": 20,
+                "rubrik": [
+                    {
+                        "id_rubrik": 1,
+                        "judul_rubrik": "Dokumen",
+                        "bobot_rubrik": 20,
+                        "detail_rubrik": "Penilaian terhadap seminar 2"
+                    },
+                    {
+                        "id_rubrik": 2,
+                        "judul_rubrik": "Presentasi",
+                        "bobot_rubrik": 40,
+                        "detail_rubrik": "Penilaian terhadap seminar 2"
+                    },
+                    {
+                        "id_rubrik": 3,
+                        "judul_rubrik": "Diskusi",
+                        "bobot_rubrik": 40,
+                        "detail_rubrik": "Penilaian terhadap seminar 2"
+                    }
+                ]
+            },
+            {
+                "id_kategori": 3,
+                "nama_kategori": "seminar 3",
+                "bobot_kategori": 30,
+                "rubrik": [
+                    {
+                        "id_rubrik": 1,
+                        "judul_rubrik": "Dokumen",
+                        "bobot_rubrik": 40,
+                        "detail_rubrik": "Penilaian terhadap seminar 3"
+                    },
+                    {
+                        "id_rubrik": 2,
+                        "judul_rubrik": "Presentasi",
+                        "bobot_rubrik": 60,
+                        "detail_rubrik": "Penilaian terhadap seminar 3"
+                    }
+                ]
+            },
+            {
+                "id_kategori": 4,
+                "nama_kategori": "Sidang Akhir",
+                "bobot_kategori": 30,
+                "rubrik": [
+                    {
+                        "id_rubrik": 1,
+                        "judul_rubrik": "Dokumen",
+                        "bobot_rubrik": 20,
+                        "detail_rubrik": "Penilaian terhadap sidang akhir"
+                    },
+                    {
+                        "id_rubrik": 2,
+                        "judul_rubrik": "Presentasi",
+                        "bobot_rubrik": 40,
+                        "detail_rubrik": "Penilaian terhadap sidang akhir"
+                    },
+                    {
+                        "id_rubrik": 3,
+                        "judul_rubrik": "Diskusi",
+                        "bobot_rubrik": 40,
+                        "detail_rubrik": "Penilaian terhadap sidang akhir"
+                    }
+                ]
+            }
+        ]
+    }
+}
